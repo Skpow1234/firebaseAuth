@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row justify-content-center p-4">
+        
+        <div class="col-md-6">
+            <form (ngSubmit)="login()">
+            <h3>Firebase Login Lab Soft 2</h3>
+            <div class="form-group p-2">
+            <input type="email" name="email" class="form-control" [(ngModel)]="email" placeholder="Ingrese email" required>
+        </div>
+        <div class="form-group p-2">
+            <input type="password" name="password" class="form-control" [(ngModel)]="password" placeholder="Ingrese contraseña" required>
+        </div>
+        <div class="form-group p-2">
+            <button type="submit" class="btn btn-info">Inicia Sesion con correo y contraseña</button>
+            <div class="register" class="btn btn-dark float-end"><a href="#" routerLink="/register">Sign In</a></div>
+        </div>
+        <div class="form-group p-2">
+            <button  (click)="onGoogleLogin()"  class="btn btn-lg btn-google" > Inicia con google</button>
+        </div>
+        <div class="form-group p-2">
+            <button  (click)="onFacebookLogin()"class="btn btn-lg btn-facebook" >Inicia con Facebook</button>
+        </div>
+        <div class="form-group p-2">
+            <button  (click)="onGithubLogin()"class="btn btn-lg btn-github">Inicia con Github</button>
+        </div>
+        <div class="form-group p-2">
+            <button (click)="onTwitterLogin()" class="btn btn-lg btn-twitter">Inicia con Twitter</button>
+        </div>
+        </form>
+        <div class="form-group">
+            <p *ngIf="errorMessage.length > 0" class="text-danger">
+                {{errorMessage}}</p>
+        
+            <p *ngIf="error.message.length > 0" class="text-danger">
+                {{error.message}} </p>
+        
+        </div>
+        </div>
+        
+    </div>
+</div>
