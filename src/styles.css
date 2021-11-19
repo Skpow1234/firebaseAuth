@@ -1,6 +1,6 @@
 body{
-    background: #7F7FD5;  
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    background: #38383a;  
+    background: -webkit-linear-gradient(to right, #525252, #4d4d4d, #6a6a6b);  
+    background: linear-gradient(to right, #545555, #676869, #717172); 
 
 }
